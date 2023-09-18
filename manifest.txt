@@ -1,0 +1,3 @@
+corpus/pubmed_test1.xml
+corpus/pubmed_test2.xml
+corpus/pubmed_test3.xml

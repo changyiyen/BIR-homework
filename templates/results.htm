@@ -1,0 +1,37 @@
+<html>
+  <meta charset="utf-8">
+  <meta lang="en">
+  <head>
+    <title>Search results</title>
+  </head>
+  <body>
+    <h2>Search results for '{{ searchterm }}':</h2>
+    <!--
+    <form method="POST" id="searchform" class="center">
+      <input type="text" placeholder="Search terms" id="searchterm" style="font-size: 2em;" autofocus>
+      <button type="submit" id="submitbutton">Submit search</button>
+    </form>
+    -->
+	{% if results -%}
+    <table>
+      <thead style="text-align: center;">
+        <tr>
+          <td>Filename</td>
+          <td>Context</td>
+        </tr>
+      </thead>
+      <tbody>
+        {% for result in results -%}
+        <tr>
+          <td><a href="{{ url_for('static', filename=result['filename']) }}">{{ result['filename'] }} ({{ result['hits'] }} hits)</a></td>
+          <td>{{ result['context'] | safe }}</td>
+        </tr>
+	    {% endfor -%}
+      </tbody>
+    </table>
+	{% else -%}
+	<p>No results found.</p>
+	{% endif -%}
+	<a href="/">Back to search</a>
+  </body>
+</html>
