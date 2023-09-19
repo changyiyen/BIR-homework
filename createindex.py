@@ -17,7 +17,7 @@ import pickle
 # Build argument parser
 parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 parser.add_argument("-l", "--filelist", help="List of filepaths to index (one on each line)", nargs='?', default="manifest.txt", type=str)
-parser.add_argument("-t", "--filetype", help="Filetypes of input files to index", type=str,choices=["twitterjson", "pubmedxml"])
+parser.add_argument("-t", "--filetype", help="Filetypes of input files to index", type=str, choices=["twitterjson", "pubmedxml", "pmid"])
 args = parser.parse_args()
 
 # Read list of file paths to index
@@ -65,7 +65,12 @@ elif args.filetype =="pubmedxml":
         with open(file, "r", encoding="UTF-8") as xmlfile:
             soup = bs4.BeautifulSoup(xmlfile, 'xml')
         #tokens = nltk.tokenize.word_tokenize(soup.AbstractText.text)
-        tokens = nltk.tokenize.RegexpTokenizer(r'[a-zA-Z0-9]+').tokenize(soup.AbstractText.text)
+        try:
+            abstracttext = soup.AbstractText.text
+            tokens = nltk.tokenize.RegexpTokenizer(r'[a-zA-Z0-9]+').tokenize(abstracttext)
+        except:
+            abstracttext = ""
+            tokens = list()
         txt = nltk.Text(tokens)
         ## Frequency distribution of tokens
         fq = nltk.probability.FreqDist(token.lower() for token in tokens)
@@ -76,8 +81,10 @@ elif args.filetype =="pubmedxml":
                 index['word_index'][word] = dict()
             index['word_index'][word][file] = fq[word]
         index['docstats'][file] = dict()
-        index['docstats'][file]['charnum'] = len(soup.AbstractText.text)
+        index['docstats'][file]['pmid'] = soup.PMID.text
+        index['docstats'][file]['charnum'] = len(abstracttext)
         index['docstats'][file]['wordn'] = len(tokens)
-        index['docstats'][file]['sentn'] = len(nltk.sent_tokenize(soup.AbstractText.text))
+        index['docstats'][file]['sentn'] = len(nltk.sent_tokenize(abstracttext))
     with open("xmlindex.json", "w") as outfile:
         json.dump(index, outfile)
+ 

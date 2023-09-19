@@ -17,14 +17,18 @@
       <thead style="text-align: center;">
         <tr>
           <td>Filename</td>
+          <td>PMID</td>
           <td>Context</td>
+          <td>Document stats</td>
         </tr>
       </thead>
       <tbody>
         {% for result in results -%}
         <tr>
-          <td><a href="{{ url_for('static', filename=result['filename']) }}">{{ result['filename'] }} ({{ result['hits'] }} hits)</a></td>
-          <td>{{ result['context'] | safe }}</td>
+          <td style="border: 1px solid black;"><a href="{{ url_for('static', filename=result['filename']) }}">{{ result['filename'] }} ({{ result['hits'] }} hits)</a></td>
+          <td style="border: 1px solid black;" >{{ result['docstats']['pmid'] }}</td>
+          <td style="border: 1px solid black;">{{ result['context'] | safe }}</td>
+          <td style="border: 1px solid black;">{{ result['docstats']['charnum'] }} characters, {{ result['docstats']['wordn'] }} words, {{ result['docstats']['sentn'] }} sentences</td>
         </tr>
 	    {% endfor -%}
       </tbody>
@@ -32,6 +36,8 @@
 	{% else -%}
 	<p>No results found.</p>
 	{% endif -%}
-	<a href="/">Back to search</a>
+    <div style="text-align: center;">
+        <a href="/">Back to search page</a>
+    </div>
   </body>
 </html>

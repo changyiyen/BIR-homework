@@ -30,7 +30,9 @@
               <input type="radio" id="tweetsearch" name="searchtype" value="tweet" />
               <label for="tweetsearch">Tweets</label>
               <input type="radio" id="pubmedsearch" name="searchtype" value="pubmedxml" checked />
-              <label for="pubmedsearch">Pubmed XML</label>
+              <label for="pubmedsearch">Pubmed XML (abstracts)</label>
+              <input type="radio" id="pmidsearch" name="searchtype" value="pmid" />
+              <label for="pmidsearch">Pubmed XML (PMID)</label>
             </fieldset>
           </td>
         </tr>
@@ -43,6 +45,7 @@
         </tr>
       </table>
     </form>
+    <!--
     <table style="margin: auto; border: 1px solid black;">
       <tr>
         <th style="font-weight: bold;">Files in corpus</th>
@@ -55,6 +58,7 @@
       <tr><td>(empty)</td></tr>
       {% endif %}
     </table>
+    -->
     <form action="/upload" method="POST" id="uploadform" enctype="multipart/form-data">
       <fieldset>
         <legend>Upload file to search corpus:</legend>

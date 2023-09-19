@@ -45,11 +45,29 @@ def main():
         if flask.request.form.get('searchtype') == 'pubmedxml':
             with open('xmlindex.json', 'r') as pubmedindex:
                 index = json.load(pubmedindex)
+        if flask.request.form.get('searchtype') == 'pmid':
+            with open('xmlindex.json', 'r') as pubmedindex:
+                index = json.load(pubmedindex)
         query = flask.request.form.get('searchterm')
         query = query.replace('AND', '&')
         query = query.replace('OR', '|')
         query = query.replace('NOT', '-')
-
+        
+        if flask.request.form.get('searchtype') == 'pmid':
+            result = dict()
+            f = ""
+            for file in index['docstats']:
+                if index['docstats'][file]['pmid'] == flask.request.form.get('searchterm'):
+                    f = file
+                    break
+            result['context'] = ""
+            result['hits'] = ""
+            try:
+                result['docstats'] = index['docstats'][f]
+            except:
+                result['docstats'] = ""
+            results.append(result)
+            
         ##### Search term found in index #####
         if flask.request.form.get('searchterm') in index['word_index'].keys():
             for id, hits in index['word_index'][flask.request.form.get('searchterm')].items():
@@ -68,6 +86,7 @@ def main():
                         abstract = bs4.BeautifulSoup(f, 'xml').AbstractText.text
                         result['context'] = abstract.replace(flask.request.form.get('searchterm'), '<mark>'+flask.request.form.get('searchterm')+'</mark>')
                 result['hits'] = hits
+                result['docstats'] = index['docstats'][result['url']]
                 results.append(result)
         ##### Search term *not* found in index: do full text search :( #####
         else:
@@ -78,21 +97,25 @@ def main():
                     result = dict()
                     with open(file, 'r') as tweetfile:
                         tweets = json.load(tweetfile)
-                
             if flask.request.form.get('searchtype') == 'pubmedxml':
                 filelist = glob.glob('corpus/*.xml')
                 for file in filelist:
                     result = dict()
                     hits = 0
                     with open(file, 'r') as pubmedfile:
-                        abstract = str(bs4.BeautifulSoup(pubmedfile, 'xml').AbstractText.text)
+                        try:
+                            abstract = str(bs4.BeautifulSoup(pubmedfile, 'xml').AbstractText.text)
+                        except:
+                            abstract = ""
                     if abstract.count(searchterm) > 0:
                         result['filename'] = file
                         result['url'] = 'corpus/' + file
+                        # Need to something better for context, instead of just dumping the whole abstract
                         result['context'] = abstract.replace(searchterm, '<mark>'+searchterm+'</mark>')
-                        result['hits'] = abstract.count(searchterm)
+                        result['hits'] = abstract.count(searchterm) 
+                        result['docstats'] = index['docstats'][file]
                         results.append(result)
-
+        results.sort(reverse=True, key=lambda x: x['hits'])
         return flask.render_template('results.htm', searchterm=flask.request.form.get('searchterm'), results=results)
 
 @app.route('/upload', methods=['GET','POST'])
