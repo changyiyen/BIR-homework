@@ -17,7 +17,7 @@ import pickle
 # Build argument parser
 parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 parser.add_argument("-l", "--filelist", help="List of filepaths to index (one on each line)", nargs='?', default="manifest.txt", type=str)
-parser.add_argument("-t", "--filetype", help="Filetypes of input files to index", type=str, choices=["twitterjson", "pubmedxml", "pmid"])
+parser.add_argument("-t", "--filetype", help="Filetypes of input files to index", type=str, choices=["twitterjson", "pubmedxml"])
 args = parser.parse_args()
 
 # Read list of file paths to index
@@ -38,7 +38,7 @@ if args.filetype == "twitterjson":
             f = json.load(jsonfile)
         for tweet in f:
             #tokens = nltk.tokenize.word_tokenize(tweet["text"])
-            tokens = nltk.tokenize.RegexpTokenizer(r'[a-zA-Z0-9]+').tokenize(tweet["Text"])
+            tokens = nltk.tokenize.RegexpTokenizer(r'[a-zA-Z0-9-]+').tokenize(tweet["Text"])
             txt = nltk.Text(tokens)
             ## Frequency distribution of tokens
             fq = nltk.probability.FreqDist(token.lower() for token in tokens)
@@ -82,7 +82,7 @@ elif args.filetype =="pubmedxml":
             index['word_index'][word][file] = fq[word]
         index['docstats'][file] = dict()
         index['docstats'][file]['pmid'] = soup.PMID.text
-        index['docstats'][file]['charnum'] = len(abstracttext)
+        index['docstats'][file]['charn'] = len(abstracttext)
         index['docstats'][file]['wordn'] = len(tokens)
         index['docstats'][file]['sentn'] = len(nltk.sent_tokenize(abstracttext))
     with open("xmlindex.json", "w") as outfile:

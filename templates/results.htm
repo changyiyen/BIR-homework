@@ -28,7 +28,7 @@
           <td style="border: 1px solid black;"><a href="{{ url_for('static', filename=result['filename']) }}">{{ result['filename'] }} ({{ result['hits'] }} hits)</a></td>
           <td style="border: 1px solid black;" >{{ result['docstats']['pmid'] }}</td>
           <td style="border: 1px solid black;">{{ result['context'] | safe }}</td>
-          <td style="border: 1px solid black;">{{ result['docstats']['charnum'] }} characters, {{ result['docstats']['wordn'] }} words, {{ result['docstats']['sentn'] }} sentences</td>
+          <td style="border: 1px solid black;">{{ result['docstats']['charn'] }} characters, {{ result['docstats']['wordn'] }} words, {{ result['docstats']['sentn'] }} sentences</td>
         </tr>
 	    {% endfor -%}
       </tbody>
