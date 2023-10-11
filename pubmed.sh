@@ -1,5 +1,6 @@
 #!/usr/env sh
-# version 2022-08-08
+# initial version: 2022-08-08
+# current version: 2023-10-12
 # dependencies: XMLStarlet, (wget or curl)
 
 ## Change this to whereever you would like the results placed
@@ -35,8 +36,12 @@ fi
 echo "[INFO] Setting downloader to $DL based on installed options."
 
 # RANDOM not available on FreeBSD; use jot(1) instead
-#sleep $((RANDOM % 600))
-#sleep `jot -r 1 1 600`
+if [ `uname -s`=='FreeBSD' ]; then
+	SLEEPTIME=`jot -r 1 1 600`
+elif [ `uname -s`=='Linux' ]; then
+	SLEEPTIME=$((RANDOM % 600))
+fi
+sleep $SLEEPTIME
 
 cd $DLDIR
 echo "[INFO] Changed working directory to $DLDIR."
