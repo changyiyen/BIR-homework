@@ -1,0 +1,24 @@
+{
+	"preprocess_xml": "false",
+	"train_model": "false",
+	"validate_model": "true",
+	"filelist": "manifest_als.txt",
+	"trainingratio": 1.0,
+	"trainingcorpus": "trainingcorpus_als.csv",
+	"validationcorpus": "validationcorpus_als.csv",
+	"tokenize": "no",
+
+    "model_name": "cbow",
+    "vector_size": 100,
+	"threads": 8,
+	"learning_rate": 0.025,
+    "epochs": 5, 
+	"saved_model": "word2vec_gensim_cbow_als.model",
+	"tsne_png": "tsne_cbow_als.png",
+	"pca_png": "pca_cbow_als.png",
+
+	"CBOW_N_WORDS": 4,
+    "SKIPGRAM_N_WORDS": 4,
+    "CBOW_MIN_WORD_FREQUENCY": 200,
+	"SKIPGRAM_MIN_WORD_FREQUENCY": 200
+}

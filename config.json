@@ -1,0 +1,28 @@
+{
+    "model_name": "cbow",
+    "dataset": "SLE",
+    "data_dir": "corpus/",
+    "train_batch_size": 96, 
+    "val_batch_size": 96, 
+    "shuffle": "True",
+    "optimizer": "Adam",
+    "learning_rate": 0.025, 
+    "epochs": 5, 
+    "train_steps": "", 
+    "val_steps": "", 
+    "checkpoint_frequency": "", 
+    "model_dir": "weights/cbow_SLE",
+	
+	"filetype": "tsv",
+	"filelist": "manifest.txt",
+	"trainingratio": 0.8,
+	"trainingcorpus": "trainingcorpus.tsv",
+	"validationcorpus": "validationcorpus.tsv",
+	
+	"CBOW_N_WORDS": 4,
+    "SKIPGRAM_N_WORDS": 4,
+    "MIN_WORD_FREQUENCY": 50,
+    "MAX_SEQUENCE_LENGTH": 256,
+    "EMBED_DIMENSION": 300,
+    "EMBED_MAX_NORM": 1
+}

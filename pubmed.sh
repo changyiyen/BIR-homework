@@ -3,25 +3,45 @@
 # current version: 2023-10-12
 # dependencies: XMLStarlet, (wget or curl)
 
+# NB. Some behavior here only works on Bash (if on GNU/Linux) and doesn't work on other shells (e.g. dash) 
+
+usage() {
+    printf "Usage: $0 [-h][-m][-s <n>]\n" 1&>2;
+	printf "       -h: displays this help\n" 1&>2;
+	printf "       -m: downloads the PubMed XML file for each entry (multiple files)\n" 1&>2;
+    printf "       -s <n>: sleep for a random period, up to 'n' seconds\n" 1&>2;
+	exit 1; 
+}
+
 ## Change this to whereever you would like the results placed
-DLDIR="/home/cyyen/ncbi-pubmed"
+#DLDIR="/home/cyyen/ncbi-pubmed"
+DLDIR="./als_corpus"
+echo "[INFO] Download directory set to $DLDIR."
 
-usage() { echo "Usage: $0 [-m]" 1&>2; exit 1; }
+if [ ! -e "$DLDIR" ]; then
+    echo "[INFO] Creating download directory $DLDIR."
+	mkdir $DLDIR
+fi
 
-while getopts ":m" option; do
+cd $DLDIR
+echo "[INFO] Changed working directory to $DLDIR."
+
+while getopts ":hms:" option; do
     case "${option}" in
         m)
             m=true ;;
-	?)
+		s)
+		    s=${OPTARG} ;;
+        *)
             usage ;;
     esac
 done
+shift $((OPTIND-1))
 
-if [ ! -e "`which xml`" ]; then
+if [ ! -e "`which xmlstarlet`" ]; then
     echo "[ERROR] XMLStarlet not found in \$PATH."
 	exit 1
 fi
-
 echo "[INFO] XMLStarlet found."
 
 # downloader preference: wget > curl > fetch
@@ -36,24 +56,25 @@ fi
 echo "[INFO] Setting downloader to $DL based on installed options."
 
 # RANDOM not available on FreeBSD; use jot(1) instead
-if [ `uname -s`=='FreeBSD' ]; then
-	SLEEPTIME=`jot -r 1 1 600`
-elif [ `uname -s`=='Linux' ]; then
-	SLEEPTIME=$((RANDOM % 600))
+if [ -n "$s" ]; then
+    SLEEPTIME=0
+    if [ `uname -s` = 'FreeBSD' ]; then
+        SLEEPTIME=`jot -r 1 1 $s`
+    elif [ `uname -s` = 'Linux' ]; then
+        SLEEPTIME=$((RANDOM % $s))
+    fi
+	echo "[INFO] Sleeping for $SLEEPTIME seconds."
+    sleep $SLEEPTIME
 fi
-sleep $SLEEPTIME
-
-cd $DLDIR
-echo "[INFO] Changed working directory to $DLDIR."
 
 baseurl="https://eutils.ncbi.nlm.nih.gov/entrez/eutils/"
 # Set PubMed as database to search
 searchquery_base="esearch.fcgi?db=pubmed&"
 
 ## Search query terms; modify these as needed ##
-#searchquery_term="term=HLA+Antigens[Mesh]+AND+Lupus+Erythematosus+,+Systemic[Mesh]"
-searchquery_term="term=Wounds+,+Gunshot[Mesh]"
-searchquery_param="&sort=pubdate&retmax=100"
+searchquery_term="term=Amyotrophic+Lateral+Sclerosis[Mesh]"
+#searchquery_term="term=Wounds+,+Gunshot[Mesh]"
+searchquery_param="&sort=pubdate&retmax=5000"
 searchquery=${searchquery_base}${searchquery_term}${searchquery_param}
 currentdate=`date -I`
 
@@ -66,25 +87,23 @@ else
     fetch ${baseurl}${searchquery} -o ${currentdate}_search.xml
 fi
 # Parse XML file to get list of PubMed IDs
-list=`xml fo -D ${currentdate}_search.xml | xml sel -t -v "eSearchResult/IdList/Id"`
+list=`xmlstarlet fo -D ${currentdate}_search.xml | xmlstarlet sel -t -v "eSearchResult/IdList/Id"`
 if [ "$m" = true ]; then
     for i in $list; do
         fetchquery="efetch.fcgi?db=pubmed&id=$i&rettype=pubmed&retmode=text"
         if [ $DL == "wget" ]; then
-            wget ${baseurl}${fetchquery} -O ${i}_fetch.xml
+            wget ${baseurl}${fetchquery} -O ${i}.xml
         elif [ $DL =="curl" ]; then
-            curl ${baseurl}${fetchquery} -o ${i}_fetch.xml
+            curl ${baseurl}${fetchquery} -o ${i}.xml
         else
-            fetch ${baseurl}${fetchquery} -o ${i}_fetch.xml
+            fetch ${baseurl}${fetchquery} -o ${i}.xml
         fi
     done
 else
-    list=`xml fo -D ${currentdate}_search.xml | xml sel -t -v "eSearchResult/IdList/Id" | tr '\n' ','`
-    echo $list
-    # Fetch Medline-formatted files instead of abstract files for future processing
+    list=`xmlstarlet fo -D ${currentdate}_search.xml | xmlstarlet sel -t -v "eSearchResult/IdList/Id" | tr '\n' ','`
+    # Fetch Medline-formatted entries into a single bzipped file for future processing
     #fetchquery="efetch.fcgi?db=pubmed&id=$list&rettype=pubmed&retmode=text"
     fetchquery="efetch.fcgi?db=pubmed&id=$list&rettype=medline&retmode=text"
-    echo $list
     if [ $DL == "wget" ]; then
         wget ${baseurl}${fetchquery} -O ${currentdate}_fetch.txt
     elif [ $DL =="curl" ]; then

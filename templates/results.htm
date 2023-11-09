@@ -2,10 +2,10 @@
   <meta charset="utf-8">
   <meta lang="en">
   <head>
-    <title>Search results</title>
+    <title>word2vec results</title>
   </head>
   <body>
-    <h2>Search results for '{{ searchterm }}':</h2>
+    <h2 style="text-align: center;">Similarity results for '{{ searchterm }}' (top {{topwordcount}} matches):</h2>
     <!--
     <form method="POST" id="searchform" class="center">
       <input type="text" placeholder="Search terms" id="searchterm" style="font-size: 2em;" autofocus>
@@ -13,31 +13,46 @@
     </form>
     -->
 	{% if results -%}
-    <table>
-      <thead style="text-align: center;">
-        <tr>
-          <td>Filename</td>
-          <td>PMID</td>
-          <td>Context</td>
-          <td>Document stats</td>
-        </tr>
-      </thead>
-      <tbody>
-        {% for result in results -%}
-        <tr>
-          <td style="border: 1px solid black;"><a href="{{ url_for('static', filename=result['filename']) }}">{{ result['filename'] }} ({{ result['hits'] }} hits)</a></td>
-          <td style="border: 1px solid black;" >{{ result['docstats']['pmid'] }}</td>
-          <td style="border: 1px solid black;">{{ result['context'] | safe }}</td>
-          <td style="border: 1px solid black;">{{ result['docstats']['charn'] }} characters, {{ result['docstats']['wordn'] }} words, {{ result['docstats']['sentn'] }} sentences</td>
-        </tr>
-	    {% endfor -%}
-      </tbody>
-    </table>
-	{% else -%}
-	<p>No results found.</p>
+	<table style="text-align: center;">
+	  <tr>
+	    <th>t-SNE plot</th>
+		<th>PCA plot</th>
+		<th>Results</th>
+	  </tr>
+	  <tr>
+	    <td>
+		  <img src="static/tsne.png" width="100%">
+		</td>
+		<td>
+		  <img src="static/pca.png" width="100%">
+		</td>
+	    <td>
+		  <div style="overflow: scroll; height:600px">
+			<table style="margin: auto;">
+			  <thead>
+				<tr>
+				  <td>Token</td>
+				  <td>Cosine similarity</td>
+				</tr>
+			  </thead>
+			  <tbody>
+				{% for result in results -%}
+				<tr>
+				  <td style="border: 1px solid black;" >{{ result[0] }}</td>
+				  <td style="border: 1px solid black;" >{{ result[1] }}</td>
+				</tr>
+				{% endfor -%}
+			  </tbody>
+			</table>
+		  </div>	
+		</td>
+	  </tr>	
+	</table>
+	{% else %}
+	(No data available, search term not in vocabulary)
 	{% endif -%}
     <div style="text-align: center;">
-        <a href="/">Back to search page</a>
+        <a href="/">Back to main page</a>
     </div>
   </body>
 </html>
