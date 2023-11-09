@@ -2,69 +2,63 @@
   <meta charset="utf-8">
   <meta lang="en">
   <head>
-    <title>Document search</title>
+    <title>Word embedding with word2vec</title>
     <style>
-      .center {
+	  .hrzcenter {
       margin: 0;
       position: absolute;
-      top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      }
+      td {
+      border: 1px solid black;
       }
   </style>
   </head>
   <body>
-    <h1 style="text-align: center;">Document search</h1>
+    <h1 style="text-align: center;">Word embedding with word2vec</h1>
     <!-- POST search term to server -->
     <form method="POST" id="searchform">
       <table style="margin: auto;">
         <tr>
-          <td>
-            <input type="text" placeholder="Search terms" id="searchterm" name="searchterm" style="font-size: 2em;" autofocus>
-          </td>
+          <th>
+            <input type="text" placeholder="Word to search in model" id="searchterm" name="searchterm" style="font-size: 2em;" autofocus>
+          </th>
         </tr>
-        <tr>
-          <td>
-            <fieldset>
-              <legend>Choose search type:</legend>
-              <input type="radio" id="tweetsearch" name="searchtype" value="tweet" />
-              <label for="tweetsearch">Tweets</label>
-              <input type="radio" id="pubmedsearch" name="searchtype" value="pubmedxml" checked />
-              <label for="pubmedsearch">Pubmed XML (abstracts)</label>
-              <input type="radio" id="pmidsearch" name="searchtype" value="pmid" />
-              <label for="pmidsearch">Pubmed XML (PMID)</label>
+		<tr>
+		  <td>
+		    <fieldset>
+              <legend>Choose pre-trained model:</legend>
+              <input type="radio" id="als_cbow" name="searchtype" value="als_cbow" checked />
+              <label for="als_cbow">Amyotrophic lateral sclerosis (CBOW) (n=5000)</label>
+              <input type="radio" id="sle_cbow" name="searchtype" value="sle_cbow" />
+              <label for="sle_cbow">Systemic lupus erythematosus (CBOW) (n=1000)</label>
             </fieldset>
-          </td>
-        </tr>
+		  </td>
+		</tr>
         <tr>
           <td>
+		    <input type="number" id="topwordcount" name="topwordcount" value="100" />
+            <label for="topwordcount">Number of similar words to find</label>
+		  </td>
+        </tr>
+		<tr>
+		  <td>
             <div style="text-align: center;">
               <button type="submit" id="submitbutton">Submit search</button>
             </div>
           </td>
-        </tr>
+		</tr>
       </table>
     </form>
-    <!--
-    <table style="margin: auto; border: 1px solid black;">
-      <tr>
-        <th style="font-weight: bold;">Files in corpus</th>
-      </tr>
-      {% if corpus -%}
-      {% for f in corpus -%}
-      <tr><td>{{ f }}</td></tr>
-      {% endfor -%}
-      {% else -%}
-      <tr><td>(empty)</td></tr>
-      {% endif %}
-    </table>
-    -->
+	<!--
     <form action="/upload" method="POST" id="uploadform" enctype="multipart/form-data">
       <fieldset>
-        <legend>Upload file to search corpus:</legend>
+        <legend>Upload file to training corpus:</legend>
         <input type="file" name="file">
         <button style="text-align: center;" type="submit" id="uploadbutton">Upload</button>
       </fieldset>
     </form>
+	-->
   </body>
 </html>

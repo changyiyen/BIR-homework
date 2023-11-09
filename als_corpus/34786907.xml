@@ -1,0 +1,245 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2023//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_230101.dtd">
+<PubmedArticleSet>
+<PubmedArticle><MedlineCitation Status="MEDLINE" Owner="NLM" IndexingMethod="Automated"><PMID Version="1">34786907</PMID><DateCompleted><Year>2022</Year><Month>05</Month><Day>02</Day></DateCompleted><DateRevised><Year>2023</Year><Month>03</Month><Day>08</Day></DateRevised><Article PubModel="Print-Electronic"><Journal><ISSN IssnType="Electronic">1973-9095</ISSN><JournalIssue CitedMedium="Internet"><Volume>58</Volume><Issue>2</Issue><PubDate><Year>2022</Year><Month>Apr</Month></PubDate></JournalIssue><Title>European journal of physical and rehabilitation medicine</Title><ISOAbbreviation>Eur J Phys Rehabil Med</ISOAbbreviation></Journal><ArticleTitle>Evidence-based position paper on Physical and Rehabilitation Medicine practice for people with amyotrophic lateral sclerosis.</ArticleTitle><Pagination><StartPage>271</StartPage><EndPage>279</EndPage><MedlinePgn>271-279</MedlinePgn></Pagination><ELocationID EIdType="doi" ValidYN="Y">10.23736/S1973-9087.21.07120-3</ELocationID><Abstract><AbstractText>Amyotrophic lateral sclerosis (ALS) is a progressive motor neuron disease that affects both upper and lower motor neurons and is fatal in its course. This evidence-based position paper represents the official position of the UEMS PRM Section. The aim of the paper is to define the role of the physical and rehabilitation medicine (PRM) physician and PRM professional practice for people with ALS. A systematic review of the literature and a consensus procedure by means of a Delphi process have been performed involving the delegates of all European countries represented in the UEMS PRM Section. The systematic literature review is reported together with thirty-two recommendations resulting from the Delphi procedure. The responsibility of the PRM physician is functional assessment of persons with ALS and delivering the optimal and most effective PRM program of care. The rehabilitation program of patients with ALS should be delivered and monitored by the multiprofessional team, with the PRM physician as principal coordinator.</AbstractText></Abstract><AuthorList CompleteYN="Y"><Author ValidYN="Y"><LastName>Lazovic</LastName><ForeName>Milica</ForeName><Initials>M</Initials><AffiliationInfo><Affiliation>Faculty of Medicine, University of Belgrade, Belgrade, Serbia - lazovicmilica15@gmail.com.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Institute for Rehabilitation, Belgrade, Serbia - lazovicmilica15@gmail.com.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Nikolic</LastName><ForeName>Dejan</ForeName><Initials>D</Initials><AffiliationInfo><Affiliation>Faculty of Medicine, University of Belgrade, Belgrade, Serbia.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Department of Physical Medicine and Rehabilitation, University Children's Hospital, Belgrade, Serbia.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Boyer</LastName><ForeName>Fran&#xe7;ois C</ForeName><Initials>FC</Initials><AffiliationInfo><Affiliation>Department of Physical and Rehabilitation Medicine, Reims Champagne Ardenne University, Sebastopol Hospital, Reims, France.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Borg</LastName><ForeName>Kristian</ForeName><Initials>K</Initials><AffiliationInfo><Affiliation>Department of Clinical Sciences, Karolinska Institutet, Danderyd Hospital, Stockholm, Sweden.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Ceravolo</LastName><ForeName>Maria G</ForeName><Initials>MG</Initials><AffiliationInfo><Affiliation>Department of Experimental and Clinical Medicine, Neurorehabilitation Clinic, University Hospital of Ancona, Politecnica delle Marche University, Ancona, Italy.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Zampolini</LastName><ForeName>Mauro</ForeName><Initials>M</Initials><AffiliationInfo><Affiliation>Department of Rehabilitation, San Giovanni Battista Hospital, Foligno, Perugia, Italy.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Kiekens</LastName><ForeName>Carlotte</ForeName><Initials>C</Initials><AffiliationInfo><Affiliation>IRCCS Multimedica, Milan, Italy.</Affiliation></AffiliationInfo></Author></AuthorList><Language>eng</Language><PublicationTypeList><PublicationType UI="D016428">Journal Article</PublicationType><PublicationType UI="D000078182">Systematic Review</PublicationType></PublicationTypeList><ArticleDate DateType="Electronic"><Year>2021</Year><Month>11</Month><Day>17</Day></ArticleDate></Article><MedlineJournalInfo><Country>Italy</Country><MedlineTA>Eur J Phys Rehabil Med</MedlineTA><NlmUniqueID>101465662</NlmUniqueID><ISSNLinking>1973-9087</ISSNLinking></MedlineJournalInfo><CitationSubset>IM</CitationSubset><MeshHeadingList><MeshHeading><DescriptorName UI="D000690" MajorTopicYN="Y">Amyotrophic Lateral Sclerosis</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D005060" MajorTopicYN="N" Type="Geographic">Europe</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D026741" MajorTopicYN="N">Physical Therapy Modalities</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D010810" MajorTopicYN="Y">Physical and Rehabilitation Medicine</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D011364" MajorTopicYN="N">Professional Practice</DescriptorName></MeshHeading></MeshHeadingList><CoiStatement><i>Conflicts of interest.&#x2014;</i>The authors certify that there is no conflict of interest with any financial organization regarding the material discussed in the manuscript.</CoiStatement></MedlineCitation><PubmedData><History><PubMedPubDate PubStatus="pubmed"><Year>2021</Year><Month>11</Month><Day>18</Day><Hour>6</Hour><Minute>0</Minute></PubMedPubDate><PubMedPubDate PubStatus="medline"><Year>2022</Year><Month>5</Month><Day>3</Day><Hour>6</Hour><Minute>0</Minute></PubMedPubDate><PubMedPubDate PubStatus="entrez"><Year>2021</Year><Month>11</Month><Day>17</Day><Hour>7</Hour><Minute>33</Minute></PubMedPubDate></History><PublicationStatus>ppublish</PublicationStatus><ArticleIdList><ArticleId IdType="pubmed">34786907</ArticleId><ArticleId IdType="pmc">PMC9980500</ArticleId><ArticleId IdType="doi">10.23736/S1973-9087.21.07120-3</ArticleId><ArticleId IdType="pii">S1973-9087.21.07120-3</ArticleId></ArticleIdList><ReferenceList><Reference><Citation>McDonald CM. Clinical approach to the diagnostic evaluation of hereditary and acquired neuromuscular diseases.
+Phys Med Rehabil Clin N Am
+2012;23:495&#x2013;563. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=22938875&amp;dopt=Abstract
+10.1016/j.pmr.2012.06.011</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/j.pmr.2012.06.011</ArticleId><ArticleId IdType="pmc">PMC3482409</ArticleId><ArticleId IdType="pubmed">22938875</ArticleId></ArticleIdList></Reference><Reference><Citation>Chi&#xf2; A, Logroscino G, Traynor BJ, Collins J, Simeone JC, Goldstein LA, et al. 
+Global epidemiology of amyotrophic lateral sclerosis: a systematic review of the published literature.
+Neuroepidemiology
+2013;41:118&#x2013;30. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=23860588&amp;dopt=Abstract
+10.1159/000351153</Citation><ArticleIdList><ArticleId IdType="doi">10.1159/000351153</ArticleId><ArticleId IdType="pmc">PMC4049265</ArticleId><ArticleId IdType="pubmed">23860588</ArticleId></ArticleIdList></Reference><Reference><Citation>Weil C, Zach N, Rishoni S, Shalev V, Chodick G.
+Epidemiology of Amyotrophic Lateral Sclerosis: A Population-Based Study in Israel.
+Neuroepidemiology
+2016;47:76&#x2013;81. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=27617889&amp;dopt=Abstract
+10.1159/000448921</Citation><ArticleIdList><ArticleId IdType="doi">10.1159/000448921</ArticleId><ArticleId IdType="pubmed">27617889</ArticleId></ArticleIdList></Reference><Reference><Citation>Ilieva H, Maragakis NJ. Motoneuron Disease: clinical.
+Adv Neurobiol
+2017;15:191&#x2013;210. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=28674982&amp;dopt=Abstract
+10.1007/978-3-319-57193-5_7</Citation><ArticleIdList><ArticleId IdType="doi">10.1007/978-3-319-57193-5_7</ArticleId><ArticleId IdType="pubmed">28674982</ArticleId></ArticleIdList></Reference><Reference><Citation>Janssens AI, Ruytings M, Al-Chalabi A, Chio A, Hardiman O, Mcdermott CJ, et al. ; ALS-CARE Consortium. A mapping review of international guidance on the management and care of amyotrophic lateral sclerosis (ALS).
+Amyotroph Lateral Scler Frontotemporal Degener
+2016;17:325&#x2013;36. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=27078045&amp;dopt=Abstract
+10.3109/21678421.2016.1167911</Citation><ArticleIdList><ArticleId IdType="doi">10.3109/21678421.2016.1167911</ArticleId><ArticleId IdType="pubmed">27078045</ArticleId></ArticleIdList></Reference><Reference><Citation>Rabkin J, Goetz R, Murphy JM, Factor-Litvak P, Mitsumoto H, ALS COSMOS Study Group . Cognitive impairment, behavioral impairment, depression, and wish to die in an ALS cohort.
+Neurology
+2016;87:1320&#x2013;8. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=27496520&amp;dopt=Abstract
+10.1212/WNL.0000000000003035</Citation><ArticleIdList><ArticleId IdType="doi">10.1212/WNL.0000000000003035</ArticleId><ArticleId IdType="pmc">PMC5573192</ArticleId><ArticleId IdType="pubmed">27496520</ArticleId></ArticleIdList></Reference><Reference><Citation>Krewski D, Barakat-Haddad C, Donnan J, Martino R, Pringsheim T, Tremlett H, et al. 
+Determinants of neurological disease: synthesis of systematic reviews.
+Neurotoxicology
+2017;61:266&#x2013;89. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=28410962&amp;dopt=Abstract
+10.1016/j.neuro.2017.04.002</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/j.neuro.2017.04.002</ArticleId><ArticleId IdType="pubmed">28410962</ArticleId></ArticleIdList></Reference><Reference><Citation>Soofi AY, Bello-Haas VD, Kho ME, Letts L. The impact of rehabilitative interventions on quality of life: a qualitative evidence synthesis of personal experiences of individuals with amyotrophic lateral sclerosis.
+Qual Life Res
+2018;27:845&#x2013;56. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=29204783&amp;dopt=Abstract
+10.1007/s11136-017-1754-7</Citation><ArticleIdList><ArticleId IdType="doi">10.1007/s11136-017-1754-7</ArticleId><ArticleId IdType="pubmed">29204783</ArticleId></ArticleIdList></Reference><Reference><Citation>Orsini M, Oliveira AB, Nascimento OJ, Reis CH, Leite MA, de Souza JA, et al. 
+Amyotrophic Lateral Sclerosis: New Perpectives and Update.
+Neurol Int
+2015;7:5885. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=26487927&amp;dopt=Abstract
+10.4081/ni.2015.5885</Citation><ArticleIdList><ArticleId IdType="doi">10.4081/ni.2015.5885</ArticleId><ArticleId IdType="pmc">PMC4591493</ArticleId><ArticleId IdType="pubmed">26487927</ArticleId></ArticleIdList></Reference><Reference><Citation>Corcia P, Meininger V. Management of amyotrophic lateral sclerosis.
+Drugs
+2008;68:1037&#x2013;48. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=18484797&amp;dopt=Abstract
+10.2165/00003495-200868080-00003</Citation><ArticleIdList><ArticleId IdType="doi">10.2165/00003495-200868080-00003</ArticleId><ArticleId IdType="pubmed">18484797</ArticleId></ArticleIdList></Reference><Reference><Citation>Negrini S, Kiekens C, Zampolini M, Wever D, Varela Donoso E, Christodoulou N.
+Methodology of &#x201c;Physical and Rehabilitation Medicine practice, Evidence Based Position Papers: the European position&#x201d; produced by the UEMS-PRM Section.
+Eur J Phys Rehabil Med
+2016;52:134&#x2013;41. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=26681647&amp;dopt=Abstract</Citation><ArticleIdList><ArticleId IdType="pubmed">26681647</ArticleId></ArticleIdList></Reference><Reference><Citation>Simmons Z.
+Rehabilitation of motor neuron disease.
+Handb Clin Neurol
+2013;110:483&#x2013;98. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=23312666&amp;dopt=Abstract
+10.1016/B978-0-444-52901-5.00041-1</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/B978-0-444-52901-5.00041-1</ArticleId><ArticleId IdType="pubmed">23312666</ArticleId></ArticleIdList></Reference><Reference><Citation>Majmudar S, Wu J, Paganoni S. Rehabilitation in amyotrophic lateral sclerosis: why it matters.
+Muscle Nerve
+2014;50:4&#x2013;13. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=24510737&amp;dopt=Abstract
+10.1002/mus.24202</Citation><ArticleIdList><ArticleId IdType="doi">10.1002/mus.24202</ArticleId><ArticleId IdType="pmc">PMC4433000</ArticleId><ArticleId IdType="pubmed">24510737</ArticleId></ArticleIdList></Reference><Reference><Citation>Andersen PM, Abrahams S, Borasio GD, de Carvalho M, Chio A, Van Damme P, et al. EFNS Task Force on Diagnosis and Management of Amyotrophic Lateral Sclerosis . EFNS guidelines on the clinical management of amyotrophic lateral sclerosis (MALS)&#x2014;revised report of an EFNS task force.
+Eur J Neurol
+2012;19:360&#x2013;75. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=21914052&amp;dopt=Abstract
+10.1111/j.1468-1331.2011.03501.x</Citation><ArticleIdList><ArticleId IdType="doi">10.1111/j.1468-1331.2011.03501.x</ArticleId><ArticleId IdType="pubmed">21914052</ArticleId></ArticleIdList></Reference><Reference><Citation>Hulisz D.
+Amyotrophic lateral sclerosis: disease state overview.
+Am J Manag Care
+2018;24(Suppl):S320&#x2013;6. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=30207670&amp;dopt=Abstract</Citation><ArticleIdList><ArticleId IdType="pubmed">30207670</ArticleId></ArticleIdList></Reference><Reference><Citation>Mandrioli J, Ferri L, Fasano A, Zucchi E, Fini N, Moglia C, et al. 
+Cardiovascular diseases may play a negative role in the prognosis of amyotrophic lateral sclerosis.
+Eur J Neurol
+2018;25:861&#x2013;8. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=29512869&amp;dopt=Abstract
+10.1111/ene.13620</Citation><ArticleIdList><ArticleId IdType="doi">10.1111/ene.13620</ArticleId><ArticleId IdType="pubmed">29512869</ArticleId></ArticleIdList></Reference><Reference><Citation>Sathasivam S.
+Managing patients with amyotrophic lateral sclerosis.
+Eur J Intern Med
+2009;20:355&#x2013;8. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=19524172&amp;dopt=Abstract
+10.1016/j.ejim.2008.09.002</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/j.ejim.2008.09.002</ArticleId><ArticleId IdType="pubmed">19524172</ArticleId></ArticleIdList></Reference><Reference><Citation>Paganoni S, Karam C, Joyce N, Bedlack R, Carter GT. Comprehensive rehabilitative care across the spectrum of amyotrophic lateral sclerosis.
+NeuroRehabilitation
+2015;37:53&#x2013;68. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=26409693&amp;dopt=Abstract
+10.3233/NRE-151240</Citation><ArticleIdList><ArticleId IdType="doi">10.3233/NRE-151240</ArticleId><ArticleId IdType="pmc">PMC5223769</ArticleId><ArticleId IdType="pubmed">26409693</ArticleId></ArticleIdList></Reference><Reference><Citation>Howard IM, Rad N. Electrodiagnostic Testing for the Diagnosis and Management of Amyotrophic Lateral Sclerosis.
+Phys Med Rehabil Clin N Am
+2018;29:669&#x2013;80. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=30293622&amp;dopt=Abstract
+10.1016/j.pmr.2018.06.003</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/j.pmr.2018.06.003</ArticleId><ArticleId IdType="pubmed">30293622</ArticleId></ArticleIdList></Reference><Reference><Citation>American Association of Neuromuscular and Electrodiagnostic Medicine. Who is qualified to practice electrodiagnostic medicine? 2012 [Internet]. Available from: https://www.aanem.org/getmedia/1e53beb2-987d-4f06-b091-ebe56148a8b9/Who-is-Qualifed-to-Practice-EDX-2012.pdf [cited 2021, Nov 18].</Citation></Reference><Reference><Citation>Joyce NC, Carter GT. Electrodiagnosis in persons with amyotrophic lateral sclerosis.
+PM R
+2013;5(Suppl):S89&#x2013;95. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=23523708&amp;dopt=Abstract
+10.1016/j.pmrj.2013.03.020</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/j.pmrj.2013.03.020</ArticleId><ArticleId IdType="pmc">PMC4590769</ArticleId><ArticleId IdType="pubmed">23523708</ArticleId></ArticleIdList></Reference><Reference><Citation>de Carvalho M, Dengler R, Eisen A, England JD, Kaji R, Kimura J, et al. 
+Electrodiagnostic criteria for diagnosis of ALS.
+Clin Neurophysiol
+2008;119:497&#x2013;503. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=18164242&amp;dopt=Abstract
+10.1016/j.clinph.2007.09.143</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/j.clinph.2007.09.143</ArticleId><ArticleId IdType="pubmed">18164242</ArticleId></ArticleIdList></Reference><Reference><Citation>Bartolo M, Chi&#xf2; A, Ferrari S, Tassorelli C, Tamburin S, Avenali M, et al. Italian Consensus Conference on Pain in Neurorehabilitation (ICCPN) . Assessing and treating pain in movement disorders, amyotrophic lateral sclerosis, severe acquired brain injury, disorders of consciousness, dementia, oncology and neuroinfectivology. Evidence and recommendations from the Italian Consensus Conference on Pain in Neurorehabilitation.
+Eur J Phys Rehabil Med
+2016;52:841&#x2013;54. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=27579582&amp;dopt=Abstract</Citation><ArticleIdList><ArticleId IdType="pubmed">27579582</ArticleId></ArticleIdList></Reference><Reference><Citation>Organization WH. International Classification of Functioning, Disability and Health: ICF. World Health Organization; 2001.</Citation></Reference><Reference><Citation>Bos I, Stallinga HA, Middel B, Kuks JB, Wynia K. Validation of the ICF core set for neuromuscular diseases.
+Eur J Phys Rehabil Med
+2013;49:179&#x2013;87. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=23172408&amp;dopt=Abstract</Citation><ArticleIdList><ArticleId IdType="pubmed">23172408</ArticleId></ArticleIdList></Reference><Reference><Citation>Lui AJ, Byl NN. A systematic review of the effect of moderate intensity exercise on function and disease progression in amyotrophic lateral sclerosis.
+J Neurol Phys Ther
+2009;33:68&#x2013;87. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=19556916&amp;dopt=Abstract
+10.1097/NPT.0b013e31819912d0</Citation><ArticleIdList><ArticleId IdType="doi">10.1097/NPT.0b013e31819912d0</ArticleId><ArticleId IdType="pubmed">19556916</ArticleId></ArticleIdList></Reference><Reference><Citation>Chen A, Montes J, Mitsumoto H. The role of exercise in amyotrophic lateral sclerosis.
+Phys Med Rehabil Clin N Am
+2008;19:545&#x2013;57, ix&#x2013;x. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=18625415&amp;dopt=Abstract
+10.1016/j.pmr.2008.02.003</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/j.pmr.2008.02.003</ArticleId><ArticleId IdType="pubmed">18625415</ArticleId></ArticleIdList></Reference><Reference><Citation>Bello-Haas VD. Physical therapy for individuals with amyotrophic lateral sclerosis: current insights.
+Degener Neurol Neuromuscul Dis
+2018;8:45&#x2013;54. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=30890895&amp;dopt=Abstract
+10.2147/DNND.S146949</Citation><ArticleIdList><ArticleId IdType="doi">10.2147/DNND.S146949</ArticleId><ArticleId IdType="pmc">PMC6065609</ArticleId><ArticleId IdType="pubmed">30890895</ArticleId></ArticleIdList></Reference><Reference><Citation>Howard I, Potts A.
+Interprofessional Care for Neuromuscular Disease.
+Curr Treat Options Neurol
+2019;21:35. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=31264031&amp;dopt=Abstract
+10.1007/s11940-019-0576-z</Citation><ArticleIdList><ArticleId IdType="doi">10.1007/s11940-019-0576-z</ArticleId><ArticleId IdType="pubmed">31264031</ArticleId></ArticleIdList></Reference><Reference><Citation>Shoesmith CL, Strong MJ. Amyotrophic lateral sclerosis: update for family physicians.
+Can Fam Physician
+2006;52:1563&#x2013;9. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=17279237&amp;dopt=Abstract</Citation><ArticleIdList><ArticleId IdType="pmc">PMC1783756</ArticleId><ArticleId IdType="pubmed">17279237</ArticleId></ArticleIdList></Reference><Reference><Citation>Soriani MH, Desnuelle C. Care management in amyotrophic lateral sclerosis.
+Rev Neurol (Paris)
+2017;173:288&#x2013;99. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=28461024&amp;dopt=Abstract
+10.1016/j.neurol.2017.03.031</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/j.neurol.2017.03.031</ArticleId><ArticleId IdType="pubmed">28461024</ArticleId></ArticleIdList></Reference><Reference><Citation>Kitano K, Asakawa T, Kamide N, Yorimoto K, Yoneda M, Kikuchi Y, et al. 
+Effectiveness of Home-Based Exercises Without Supervision by Physical Therapists for Patients With Early-Stage Amyotrophic Lateral Sclerosis: A Pilot Study.
+Arch Phys Med Rehabil
+2018;99:2114&#x2013;7. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=29608902&amp;dopt=Abstract
+10.1016/j.apmr.2018.02.015</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/j.apmr.2018.02.015</ArticleId><ArticleId IdType="pubmed">29608902</ArticleId></ArticleIdList></Reference><Reference><Citation>Bach JR. Noninvasive Respiratory Management of Patients With Neuromuscular Disease.
+Ann Rehabil Med
+2017;41:519&#x2013;38. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=28971036&amp;dopt=Abstract
+10.5535/arm.2017.41.4.519</Citation><ArticleIdList><ArticleId IdType="doi">10.5535/arm.2017.41.4.519</ArticleId><ArticleId IdType="pmc">PMC5608659</ArticleId><ArticleId IdType="pubmed">28971036</ArticleId></ArticleIdList></Reference><Reference><Citation>Van De Rijn M, Paganoni S, Levine-Weinberg M, Campbell K, Swartz Ellrodt A, Estrada J, et al. 
+Experience with telemedicine in a multi-disciplinary ALS clinic.
+Amyotroph Lateral Scler Frontotemporal Degener
+2018;19:143&#x2013;8. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=29250986&amp;dopt=Abstract
+10.1080/21678421.2017.1392577</Citation><ArticleIdList><ArticleId IdType="doi">10.1080/21678421.2017.1392577</ArticleId><ArticleId IdType="pubmed">29250986</ArticleId></ArticleIdList></Reference><Reference><Citation>Section of Physical and Rehabilitation Medicine Union Europ&#xe9;enne des M&#xe9;decins Sp&#xe9;cialistes (UEMS) European Board of Physical and Rehabilitation Medicine . Acad&#xe9;mie Europ&#xe9;enne de M&#xe9;decine de R&#xe9;adaptation; European Society for Physical and Rehabilitation Medicine. White book on physical and rehabilitation medicine in Europe. Eura Medicophys 2006;42:292&#x2013;332.</Citation><ArticleIdList><ArticleId IdType="pubmed">17235262</ArticleId></ArticleIdList></Reference><Reference><Citation>Galea MD. Telemedicine in Rehabilitation.
+Phys Med Rehabil Clin N Am
+2019;30:473&#x2013;83. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=30954160&amp;dopt=Abstract
+10.1016/j.pmr.2018.12.002</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/j.pmr.2018.12.002</ArticleId><ArticleId IdType="pubmed">30954160</ArticleId></ArticleIdList></Reference><Reference><Citation>Rehabilitation in Health Systems. Geneva: World Health Organization; 2017. License: CC BY-NC-SA 3.0 IGO. https://apps.who.int/iris/bitstream/handle/10665/254506/9789241549974-eng.pdf?sequence=8&amp;isAllowed=y</Citation></Reference><Reference><Citation>G&#xfc;ell MR, Ant&#xf3;n A, Rojas-Garc&#xed;a R, Puy C, Pradas J; en representaci&#xf3;n de todo el grupo interdisciplinario. Comprehensive care of amyotrophic lateral sclerosis patients: a care model. Arch Bronconeumol
+2013;49:529&#x2013;33. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=23540596&amp;dopt=Abstract https://doi.org/10.1016/j.arbr.2013.09.011</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/j.arbr.2013.09.011</ArticleId><ArticleId IdType="pubmed">23540596</ArticleId></ArticleIdList></Reference><Reference><Citation>Budin&#x10d;evi&#x107; H, Mar&#x10d;inko Budin&#x10d;evi&#x107; A, Kos M, Vla&#x161;i&#x107; S, Bartolovi&#x107; J, Benko S, et al. 
+[Multidisciplinary Management and Neurorehabilitation of Patients with Amyotrophic Lateral Sclerosis]. Acta Med Croatica
+2016;70:111&#x2013;6. Croatian. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=28722839&amp;dopt=Abstract</Citation><ArticleIdList><ArticleId IdType="pubmed">28722839</ArticleId></ArticleIdList></Reference><Reference><Citation>Lewis M, Rushanan S. The role of physical therapy and occupational therapy in the treatment of amyotrophic lateral sclerosis.
+NeuroRehabilitation
+2007;22:451&#x2013;61. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=18198431&amp;dopt=Abstract
+10.3233/NRE-2007-22608</Citation><ArticleIdList><ArticleId IdType="doi">10.3233/NRE-2007-22608</ArticleId><ArticleId IdType="pubmed">18198431</ArticleId></ArticleIdList></Reference><Reference><Citation>Mayadev AS, Weiss MD, Distad BJ, Krivickas LS, Carter GT. The amyotrophic lateral sclerosis center: a model of multidisciplinary management.
+Phys Med Rehabil Clin N Am
+2008;19:619&#x2013;31, xi. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=18625420&amp;dopt=Abstract
+10.1016/j.pmr.2008.04.004</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/j.pmr.2008.04.004</ArticleId><ArticleId IdType="pubmed">18625420</ArticleId></ArticleIdList></Reference><Reference><Citation>European Physical and Rehabilitation Medicine Bodies Alliance . White Book on Physical and Rehabilitation Medicine (PRM) in Europe. Chapter 1. Definitions and concepts of PRM.
+Eur J Phys Rehabil Med
+2018;54:156&#x2013;65. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=29565102&amp;dopt=Abstract</Citation><ArticleIdList><ArticleId IdType="pubmed">29565102</ArticleId></ArticleIdList></Reference><Reference><Citation>European Physical and Rehabilitation Medicine Bodies Alliance . White Book on Physical and Rehabilitation Medicine (PRM) in Europe. Chapter 6. Knowledge and skills of PRM physicians.
+Eur J Phys Rehabil Med
+2018;54:214&#x2013;29. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=29565107&amp;dopt=Abstract</Citation><ArticleIdList><ArticleId IdType="pubmed">29565107</ArticleId></ArticleIdList></Reference><Reference><Citation>de Wit J, Bakker LA, van Groenestijn AC, van den Berg LH, Schr&#xf6;der CD, Visser-Meily JM, et al. 
+Caregiver burden in amyotrophic lateral sclerosis: A systematic review.
+Palliat Med
+2018;32:231&#x2013;45. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=28671483&amp;dopt=Abstract
+10.1177/0269216317709965</Citation><ArticleIdList><ArticleId IdType="doi">10.1177/0269216317709965</ArticleId><ArticleId IdType="pmc">PMC5784458</ArticleId><ArticleId IdType="pubmed">28671483</ArticleId></ArticleIdList></Reference><Reference><Citation>Clawson LL, Cudkowicz M, Krivickas L, Brooks BR, Sanjak M, Allred P, et al. ; neals consortium. A randomized controlled trial of resistance and endurance exercise in amyotrophic lateral sclerosis.
+Amyotroph Lateral Scler Frontotemporal Degener
+2018;19:250&#x2013;8. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=29191052&amp;dopt=Abstract
+10.1080/21678421.2017.1404108</Citation><ArticleIdList><ArticleId IdType="doi">10.1080/21678421.2017.1404108</ArticleId><ArticleId IdType="pubmed">29191052</ArticleId></ArticleIdList></Reference><Reference><Citation>Lunetta C, Lizio A, Sansone VA, Cellotto NM, Maestri E, Bettinelli M, et al. 
+Strictly monitored exercise programs reduce motor deterioration in ALS: preliminary results of a randomized controlled trial.
+J Neurol
+2016;263:52&#x2013;60. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=26477027&amp;dopt=Abstract
+10.1007/s00415-015-7924-z</Citation><ArticleIdList><ArticleId IdType="doi">10.1007/s00415-015-7924-z</ArticleId><ArticleId IdType="pubmed">26477027</ArticleId></ArticleIdList></Reference><Reference><Citation>Lisle S, Tennison M.
+Amyotrophic lateral sclerosis: the role of exercise.
+Curr Sports Med Rep
+2015;14:45&#x2013;6. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=25574882&amp;dopt=Abstract
+10.1249/JSR.0000000000000122</Citation><ArticleIdList><ArticleId IdType="doi">10.1249/JSR.0000000000000122</ArticleId><ArticleId IdType="pubmed">25574882</ArticleId></ArticleIdList></Reference><Reference><Citation>Vitacca M, Comini L, Tentorio M, Assoni G, Trainini D, Fiorenza D, et al. 
+A pilot trial of telemedicine-assisted, integrated care for patients with advanced amyotrophic lateral sclerosis and their caregivers.
+J Telemed Telecare
+2010;16:83&#x2013;8. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=20139136&amp;dopt=Abstract
+10.1258/jtt.2009.090604</Citation><ArticleIdList><ArticleId IdType="doi">10.1258/jtt.2009.090604</ArticleId><ArticleId IdType="pubmed">20139136</ArticleId></ArticleIdList></Reference><Reference><Citation>Tenforde AS, Hefner JE, Kodish-Wachs JE, Iaccarino MA, Paganoni S. Telehealth in Physical Medicine and Rehabilitation: A Narrative Review.
+PM R
+2017;9(5S):S51&#x2013;8. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=28527504&amp;dopt=Abstract
+10.1016/j.pmrj.2017.02.013</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/j.pmrj.2017.02.013</ArticleId><ArticleId IdType="pubmed">28527504</ArticleId></ArticleIdList></Reference><Reference><Citation>Macpherson CE, Bassile CC. Pulmonary Physical Therapy Techniques to Enhance Survival in Amyotrophic Lateral Sclerosis: A Systematic Review.
+J Neurol Phys Ther
+2016;40:165&#x2013;75. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=27164308&amp;dopt=Abstract
+10.1097/NPT.0000000000000136</Citation><ArticleIdList><ArticleId IdType="doi">10.1097/NPT.0000000000000136</ArticleId><ArticleId IdType="pubmed">27164308</ArticleId></ArticleIdList></Reference><Reference><Citation>Ferreira GD, Costa AC, Plentz RD, Coronel CC, Sbruzzi G. Respiratory training improved ventilatory function and respiratory muscle strength in patients with multiple sclerosis and lateral amyotrophic sclerosis: systematic review and meta-analysis.
+Physiotherapy
+2016;102:221&#x2013;8. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=27026167&amp;dopt=Abstract
+10.1016/j.physio.2016.01.002</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/j.physio.2016.01.002</ArticleId><ArticleId IdType="pubmed">27026167</ArticleId></ArticleIdList></Reference><Reference><Citation>Plowman EK, Tabor-Gray L, Rosado KM, Vasilopoulos T, Robison R, Chapin JL, et al. 
+Impact of expiratory strength training in amyotrophic lateral sclerosis: results of a randomized, sham-controlled trial.
+Muscle Nerve
+2019;59:40&#x2013;6. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=29981250&amp;dopt=Abstract
+10.1002/mus.26292</Citation><ArticleIdList><ArticleId IdType="doi">10.1002/mus.26292</ArticleId><ArticleId IdType="pubmed">29981250</ArticleId></ArticleIdList></Reference><Reference><Citation>Chi&#xf2; A, Mora G, Lauria G. Pain in amyotrophic lateral sclerosis.
+Lancet Neurol
+2017;16:144&#x2013;57. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=27964824&amp;dopt=Abstract
+10.1016/S1474-4422(16)30358-1</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/S1474-4422(16)30358-1</ArticleId><ArticleId IdType="pubmed">27964824</ArticleId></ArticleIdList></Reference><Reference><Citation>McClelland S, 3rd, Bethoux FA, Boulis NM, Sutliff MH, Stough DK, Schwetz KM, et al. 
+Intrathecal baclofen for spasticity-related pain in amyotrophic lateral sclerosis: efficacy and factors associated with pain relief.
+Muscle Nerve
+2008;37:396&#x2013;8. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=17894358&amp;dopt=Abstract
+10.1002/mus.20900</Citation><ArticleIdList><ArticleId IdType="doi">10.1002/mus.20900</ArticleId><ArticleId IdType="pubmed">17894358</ArticleId></ArticleIdList></Reference><Reference><Citation>Delpont B, Beauvais K, Jacquin-Piques A, Alavoine V, Rault P, Blanc-Labarre C, et al. 
+Clinical features of pain in amyotrophic lateral sclerosis: A clinical challenge.
+Rev Neurol (Paris)
+2019;175:11&#x2013;5. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=30131172&amp;dopt=Abstract
+10.1016/j.neurol.2017.11.009</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/j.neurol.2017.11.009</ArticleId><ArticleId IdType="pubmed">30131172</ArticleId></ArticleIdList></Reference><Reference><Citation>Gonz&#xe1;lez-Fern&#xe1;ndez M, Daniels SK. Dysphagia in stroke and neurologic disease.
+Phys Med Rehabil Clin N Am
+2008;19:867&#x2013;88, x. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=18940646&amp;dopt=Abstract
+10.1016/j.pmr.2008.07.001</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/j.pmr.2008.07.001</ArticleId><ArticleId IdType="pubmed">18940646</ArticleId></ArticleIdList></Reference><Reference><Citation>Tomik B, Guiloff RJ. Dysarthria in amyotrophic lateral sclerosis: A review.
+Amyotroph Lateral Scler
+2010;11:4&#x2013;15. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=20184513&amp;dopt=Abstract
+10.3109/17482960802379004</Citation><ArticleIdList><ArticleId IdType="doi">10.3109/17482960802379004</ArticleId><ArticleId IdType="pubmed">20184513</ArticleId></ArticleIdList></Reference><Reference><Citation>K&#xf6;rner S, Sieniawski M, Kollewe K, Rath KJ, Krampfl K, Zapf A, et al. 
+Speech therapy and communication device: impact on quality of life and mood in patients with amyotrophic lateral sclerosis.
+Amyotroph Lateral Scler Frontotemporal Degener
+2013;14:20&#x2013;5. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=22871079&amp;dopt=Abstract
+10.3109/17482968.2012.692382</Citation><ArticleIdList><ArticleId IdType="doi">10.3109/17482968.2012.692382</ArticleId><ArticleId IdType="pubmed">22871079</ArticleId></ArticleIdList></Reference><Reference><Citation>Raglio A, Giovanazzi E, Pain D, Baiardi P, Imbriani C, Imbriani M, et al. 
+Active music therapy approach in amyotrophic lateral sclerosis: a randomized-controlled trial.
+Int J Rehabil Res
+2016;39:365&#x2013;7. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=27437724&amp;dopt=Abstract
+10.1097/MRR.0000000000000187</Citation><ArticleIdList><ArticleId IdType="doi">10.1097/MRR.0000000000000187</ArticleId><ArticleId IdType="pubmed">27437724</ArticleId></ArticleIdList></Reference><Reference><Citation>Arbesman M, Sheard K. Systematic review of the effectiveness of occupational therapy-related interventions for people with amyotrophic lateral sclerosis.
+Am J Occup Ther
+2014;68:20&#x2013;6. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=24367951&amp;dopt=Abstract
+10.5014/ajot.2014.008649</Citation><ArticleIdList><ArticleId IdType="doi">10.5014/ajot.2014.008649</ArticleId><ArticleId IdType="pubmed">24367951</ArticleId></ArticleIdList></Reference><Reference><Citation>Creemers H, Beelen A, Grupstra H, Nollet F, van den Berg LH. The provision of assistive devices and home adaptations to patients with ALS in the Netherlands: patients&#x2019; perspectives.
+Amyotroph Lateral Scler Frontotemporal Degener
+2014;15:420&#x2013;5. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=24899120&amp;dopt=Abstract
+10.3109/21678421.2014.920031</Citation><ArticleIdList><ArticleId IdType="doi">10.3109/21678421.2014.920031</ArticleId><ArticleId IdType="pubmed">24899120</ArticleId></ArticleIdList></Reference><Reference><Citation>Elliott MA, Malvar H, Maassel LL, Campbell J, Kulkarni H, Spiridonova I, et al. 
+Eye-controlled, power wheelchair performs well for ALS patients.
+Muscle Nerve
+2019;60:513&#x2013;9. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=31397910&amp;dopt=Abstract
+10.1002/mus.26655</Citation><ArticleIdList><ArticleId IdType="doi">10.1002/mus.26655</ArticleId><ArticleId IdType="pmc">PMC6851551</ArticleId><ArticleId IdType="pubmed">31397910</ArticleId></ArticleIdList></Reference><Reference><Citation>Guy V, Soriani MH, Bruno M, Papadopoulo T, Desnuelle C, Clerc M. Brain computer interface with the P300 speller: usability for disabled people with amyotrophic lateral sclerosis.
+Ann Phys Rehabil Med
+2018;61:5&#x2013;11. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=29024794&amp;dopt=Abstract
+10.1016/j.rehab.2017.09.004</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/j.rehab.2017.09.004</ArticleId><ArticleId IdType="pubmed">29024794</ArticleId></ArticleIdList></Reference><Reference><Citation>Burns TM, Graham CD, Rose MR, Simmons Z. Quality of life and measures of quality of life in patients with neuromuscular disorders.
+Muscle Nerve
+2012;46:9&#x2013;25. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=22644588&amp;dopt=Abstract
+10.1002/mus.23245</Citation><ArticleIdList><ArticleId IdType="doi">10.1002/mus.23245</ArticleId><ArticleId IdType="pubmed">22644588</ArticleId></ArticleIdList></Reference><Reference><Citation>Bos I, Kuks JB, Wynia K. Development and testing psychometric properties of an ICF-based health measure: The Neuromuscular Disease Impact Profile.
+J Rehabil Med
+2015;47:445&#x2013;53. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=25679115&amp;dopt=Abstract
+10.2340/16501977-1938</Citation><ArticleIdList><ArticleId IdType="doi">10.2340/16501977-1938</ArticleId><ArticleId IdType="pubmed">25679115</ArticleId></ArticleIdList></Reference><Reference><Citation>Simmons Z.
+Patient-Perceived Outcomes and Quality of Life in ALS.
+Neurotherapeutics
+2015;12:394&#x2013;402. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=25502407&amp;dopt=Abstract
+10.1007/s13311-014-0322-x</Citation><ArticleIdList><ArticleId IdType="doi">10.1007/s13311-014-0322-x</ArticleId><ArticleId IdType="pmc">PMC4404446</ArticleId><ArticleId IdType="pubmed">25502407</ArticleId></ArticleIdList></Reference><Reference><Citation>Bakker LA, Schr&#xf6;der CD, van Es MA, Westers P, Visser-Meily JM, van den Berg LH. Assessment of the factorial validity and reliability of the ALSFRS-R: a revision of its measurement model.
+J Neurol
+2017;264:1413&#x2013;20. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=28608303&amp;dopt=Abstract
+10.1007/s00415-017-8538-4</Citation><ArticleIdList><ArticleId IdType="doi">10.1007/s00415-017-8538-4</ArticleId><ArticleId IdType="pmc">PMC5502060</ArticleId><ArticleId IdType="pubmed">28608303</ArticleId></ArticleIdList></Reference><Reference><Citation>Mitsumoto H, Chiuzan C, Gilmore M, Zhang Y, Ibagon C, McHale B, et al. 
+A novel muscle cramp scale (MCS) in amyotrophic lateral sclerosis (ALS).
+Amyotroph Lateral Scler Frontotemporal Degener
+2019;20:328&#x2013;35. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=31007059&amp;dopt=Abstract
+10.1080/21678421.2019.1603310</Citation><ArticleIdList><ArticleId IdType="doi">10.1080/21678421.2019.1603310</ArticleId><ArticleId IdType="pubmed">31007059</ArticleId></ArticleIdList></Reference><Reference><Citation>Hobson EV, McDermott CJ. Supportive and symptomatic management of amyotrophic lateral sclerosis.
+Nat Rev Neurol
+2016;12:526&#x2013;38. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=27514291&amp;dopt=Abstract
+10.1038/nrneurol.2016.111</Citation><ArticleIdList><ArticleId IdType="doi">10.1038/nrneurol.2016.111</ArticleId><ArticleId IdType="pubmed">27514291</ArticleId></ArticleIdList></Reference><Reference><Citation>Malik R, Lui A, Lomen-Hoerth C.
+Amyotrophic lateral sclerosis.
+Semin Neurol
+2014;34:534&#x2013;41. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=25520025&amp;dopt=Abstract
+10.1055/s-0034-1396007</Citation><ArticleIdList><ArticleId IdType="doi">10.1055/s-0034-1396007</ArticleId><ArticleId IdType="pubmed">25520025</ArticleId></ArticleIdList></Reference><Reference><Citation>de Almeida JP, Silvestre R, Pinto AC, de Carvalho M. Exercise and amyotrophic lateral sclerosis.
+Neurol Sci
+2012;33:9&#x2013;15. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=22228269&amp;dopt=Abstract
+10.1007/s10072-011-0921-9</Citation><ArticleIdList><ArticleId IdType="doi">10.1007/s10072-011-0921-9</ArticleId><ArticleId IdType="pubmed">22228269</ArticleId></ArticleIdList></Reference><Reference><Citation>Valadi N.
+Evaluation and management of amyotrophic lateral sclerosis.
+Prim Care
+2015;42:177&#x2013;87. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=25979579&amp;dopt=Abstract
+10.1016/j.pop.2015.01.009</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/j.pop.2015.01.009</ArticleId><ArticleId IdType="pubmed">25979579</ArticleId></ArticleIdList></Reference><Reference><Citation>Seeber AA, Pols AJ, Hijdra A, Grupstra HF, Willems DL, de Visser M. Advance care planning in progressive neurological diseases: lessons from ALS.
+BMC Palliat Care
+2019;18:50. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=31196046&amp;dopt=Abstract
+10.1186/s12904-019-0433-6</Citation><ArticleIdList><ArticleId IdType="doi">10.1186/s12904-019-0433-6</ArticleId><ArticleId IdType="pmc">PMC6567602</ArticleId><ArticleId IdType="pubmed">31196046</ArticleId></ArticleIdList></Reference><Reference><Citation>Karam CY, Paganoni S, Joyce N, Carter GT, Bedlack R. Palliative Care Issues in Amyotrophic Lateral Sclerosis: An Evidenced-Based Review.
+Am J Hosp Palliat Care
+2016;33:84&#x2013;92. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=25202033&amp;dopt=Abstract
+10.1177/1049909114548719</Citation><ArticleIdList><ArticleId IdType="doi">10.1177/1049909114548719</ArticleId><ArticleId IdType="pmc">PMC4439378</ArticleId><ArticleId IdType="pubmed">25202033</ArticleId></ArticleIdList></Reference><Reference><Citation>Connolly S, Galvin M, Hardiman O. End-of-life management in patients with amyotrophic lateral sclerosis.
+Lancet Neurol
+2015;14:435&#x2013;42. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=25728958&amp;dopt=Abstract
+10.1016/S1474-4422(14)70221-2</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/S1474-4422(14)70221-2</ArticleId><ArticleId IdType="pubmed">25728958</ArticleId></ArticleIdList></Reference><Reference><Citation>Dal Bello-Haas V, Florence JM. Therapeutic exercise for people with amyotrophic lateral sclerosis or motor neuron disease.
+Cochrane Database Syst Rev
+2013;(5):CD005229. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=23728653&amp;dopt=Abstract
+10.1002/14651858.CD005229.pub3</Citation><ArticleIdList><ArticleId IdType="doi">10.1002/14651858.CD005229.pub3</ArticleId><ArticleId IdType="pmc">PMC6769061</ArticleId><ArticleId IdType="pubmed">23728653</ArticleId></ArticleIdList></Reference><Reference><Citation>Ashworth NL, Satkunam LE, Deforge D. Treatment for spasticity in amyotrophic lateral sclerosis/motor neuron disease.
+Cochrane Database Syst Rev
+2012;(2):CD004156. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=22336799&amp;dopt=Abstract
+10.1002/14651858.CD004156.pub4</Citation><ArticleIdList><ArticleId IdType="doi">10.1002/14651858.CD004156.pub4</ArticleId><ArticleId IdType="pubmed">22336799</ArticleId></ArticleIdList></Reference><Reference><Citation>Radunovic A, Annane D, Rafiq MK, Brassington R, Mustfa N. Mechanical ventilation for amyotrophic lateral sclerosis/motor neuron disease. Cochrane Database Syst Rev 2017;10:CD004427. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=28982219&amp;dopt=Abstract
+10.1002/14651858.CD004427.pub4</Citation><ArticleIdList><ArticleId IdType="doi">10.1002/14651858.CD004427.pub4</ArticleId><ArticleId IdType="pmc">PMC6485636</ArticleId><ArticleId IdType="pubmed">28982219</ArticleId></ArticleIdList></Reference><Reference><Citation>Ng L, Khan F, Young CA, Galea M. Symptomatic treatments for amyotrophic lateral sclerosis/motor neuron disease. Cochrane Database Syst Rev 2017;1:CD011776. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=28072907&amp;dopt=Abstract
+10.1002/14651858.CD011776.pub2</Citation><ArticleIdList><ArticleId IdType="doi">10.1002/14651858.CD011776.pub2</ArticleId><ArticleId IdType="pmc">PMC6469543</ArticleId><ArticleId IdType="pubmed">28072907</ArticleId></ArticleIdList></Reference><Reference><Citation>Schell WE, Mar VS, Da Silva CP. Correlation of falls in patients with Amyotrophic Lateral Sclerosis with objective measures of balance, strength, and spasticity.
+NeuroRehabilitation
+2019;44:85&#x2013;93. https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=PubMed&amp;list_uids=30714981&amp;dopt=Abstract
+10.3233/NRE-182531</Citation><ArticleIdList><ArticleId IdType="doi">10.3233/NRE-182531</ArticleId><ArticleId IdType="pmc">PMC6398543</ArticleId><ArticleId IdType="pubmed">30714981</ArticleId></ArticleIdList></Reference></ReferenceList></PubmedData></PubmedArticle></PubmedArticleSet>
