@@ -1,0 +1,8 @@
+{
+	"mode": "tfidf2",
+	"filelist": "manifest_kd.txt",
+	"corpus": "corpus_kd.json",
+	"tfidf_output": "tfidf_kd.csv",
+	"tfidf_bigram_output": "tfidf_bigram_kd.csv",
+	"tfidf_0_output": "tfidf_0_kd.csv"
+}

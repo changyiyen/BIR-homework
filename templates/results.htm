@@ -2,10 +2,10 @@
   <meta charset="utf-8">
   <meta lang="en">
   <head>
-    <title>word2vec results</title>
+    <title>Search results</title>
   </head>
   <body>
-    <h2 style="text-align: center;">Similarity results for '{{ searchterm }}' (top {{topwordcount}} matches):</h2>
+    <h2 style="text-align: center;">Search results for '{{ searchterm }}' (top {{ topcount }} matches):</h2>
     <!--
     <form method="POST" id="searchform" class="center">
       <input type="text" placeholder="Search terms" id="searchterm" style="font-size: 2em;" autofocus>
@@ -15,31 +15,29 @@
 	{% if results -%}
 	<table style="text-align: center;">
 	  <tr>
-	    <th>t-SNE plot</th>
-		<th>PCA plot</th>
 		<th>Results</th>
 	  </tr>
 	  <tr>
-	    <td>
-		  <img src="static/tsne.png" width="100%">
-		</td>
-		<td>
-		  <img src="static/pca.png" width="100%">
-		</td>
 	    <td>
 		  <div style="overflow: scroll; height:600px">
 			<table style="margin: auto;">
 			  <thead>
 				<tr>
-				  <td>Token</td>
-				  <td>Cosine similarity</td>
+				  <td>Document</td>
+				  <td>Title</td>
+				  <td>Document token count</td>
+				  <td>TFIDF sum for search terms</td>
 				</tr>
 			  </thead>
 			  <tbody>
 				{% for result in results -%}
 				<tr>
-				  <td style="border: 1px solid black;" >{{ result[0] }}</td>
-				  <td style="border: 1px solid black;" >{{ result[1] }}</td>
+				  <td style="border: 1px solid black;" >
+				      <a href="{{ url_for('static', filename=result[0]) }}">{{ result[0] }}</a>
+			      </td>
+				  <td>{{ result[1] }}</td>
+				  <td>{{ result[2] }}</td>
+				  <td style="border: 1px solid black;" >{{ result[3] }}</td>
 				</tr>
 				{% endfor -%}
 			  </tbody>

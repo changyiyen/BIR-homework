@@ -2,7 +2,7 @@
   <meta charset="utf-8">
   <meta lang="en">
   <head>
-    <title>Word embedding with word2vec</title>
+    <title>Document search with TF-IDF</title>
     <style>
 	  .hrzcenter {
       margin: 0;
@@ -16,32 +16,27 @@
   </style>
   </head>
   <body>
-    <h1 style="text-align: center;">Word embedding with word2vec</h1>
+    <h1 style="text-align: center;">Document search with TF-IDF</h1>
+	<p>TF-IDF calculated from PubMed documents for Kennedy disease (204 docs)</p>
     <!-- POST search term to server -->
     <form method="POST" id="searchform">
       <table style="margin: auto;">
         <tr>
           <th>
-            <input type="text" placeholder="Word to search in model" id="searchterm" name="searchterm" style="font-size: 2em;" autofocus>
+            <input type="text" placeholder="Search phrase" id="searchterm" name="searchterm" style="font-size: 2em;" autofocus>
           </th>
         </tr>
 		<tr>
 		  <td>
 		    <fieldset>
-              <legend>Choose pre-trained model:</legend>
-              <input type="radio" id="als_cbow" name="searchtype" value="als_cbow" checked />
-              <label for="als_cbow">Amyotrophic lateral sclerosis (CBOW) (n=5000)</label>
-              <input type="radio" id="sle_cbow" name="searchtype" value="sle_cbow" />
-              <label for="sle_cbow">Systemic lupus erythematosus (CBOW) (n=1000)</label>
+              <legend>Choose TF-IDF calculation method:</legend>
+              <input type="radio" id="tfidf" name="searchtype" value="tfidf" checked />
+              <label for="tfidf">Vanilla TFIDF (L2 normalization)</label>
+			  <input type="radio" id="tfidf2" name="searchtype" value="tfidf2" />
+              <label for="tfidf">TFIDF with bigrams</label>
             </fieldset>
 		  </td>
 		</tr>
-        <tr>
-          <td>
-		    <input type="number" id="topwordcount" name="topwordcount" value="100" />
-            <label for="topwordcount">Number of similar words to find</label>
-		  </td>
-        </tr>
 		<tr>
 		  <td>
             <div style="text-align: center;">

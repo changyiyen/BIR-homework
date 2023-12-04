@@ -15,7 +15,7 @@ usage() {
 
 ## Change this to whereever you would like the results placed
 #DLDIR="/home/cyyen/ncbi-pubmed"
-DLDIR="./als_corpus"
+DLDIR="./kd_corpus"
 echo "[INFO] Download directory set to $DLDIR."
 
 if [ ! -e "$DLDIR" ]; then
@@ -72,16 +72,17 @@ baseurl="https://eutils.ncbi.nlm.nih.gov/entrez/eutils/"
 searchquery_base="esearch.fcgi?db=pubmed&"
 
 ## Search query terms; modify these as needed ##
-searchquery_term="term=Amyotrophic+Lateral+Sclerosis[Mesh]"
+searchquery_term="term=Bulbo-Spinal+Atrophy%2C+X-Linked[Mesh]"
 #searchquery_term="term=Wounds+,+Gunshot[Mesh]"
 searchquery_param="&sort=pubdate&retmax=5000"
 searchquery=${searchquery_base}${searchquery_term}${searchquery_param}
 currentdate=`date -I`
 
 # Get search result XML file
-if [ $DL == "wget" ]; then
+if [ $DL=="wget" ]; then
+    echo ${baseurl}${searchquery}
     wget ${baseurl}${searchquery} -O ${currentdate}_search.xml
-elif [ $DL =="curl" ]; then
+elif [ $DL=="curl" ]; then
     curl ${baseurl}${searchquery} -o ${currentdate}_search.xml
 else
     fetch ${baseurl}${searchquery} -o ${currentdate}_search.xml
@@ -91,9 +92,9 @@ list=`xmlstarlet fo -D ${currentdate}_search.xml | xmlstarlet sel -t -v "eSearch
 if [ "$m" = true ]; then
     for i in $list; do
         fetchquery="efetch.fcgi?db=pubmed&id=$i&rettype=pubmed&retmode=text"
-        if [ $DL == "wget" ]; then
+        if [ $DL=="wget" ]; then
             wget ${baseurl}${fetchquery} -O ${i}.xml
-        elif [ $DL =="curl" ]; then
+        elif [ $DL=="curl" ]; then
             curl ${baseurl}${fetchquery} -o ${i}.xml
         else
             fetch ${baseurl}${fetchquery} -o ${i}.xml

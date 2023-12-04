@@ -3,24 +3,23 @@
 # Import necessary packages
 ## Installed
 import flask
-import gensim
 import werkzeug.utils
-
+import nltk
 import numpy as np
-from sklearn.manifold import TSNE
-from sklearn.decomposition import PCA
-import matplotlib.pyplot as plt
+import pandas as pd
 
 ## Builtins
+import json
 import os
 import os.path
+from collections import OrderedDict
 
 # Set upload folder
 UPLOAD_FOLDER = 'corpus'
 ALLOWED_EXTENSIONS = {'xml'}
 
 # Define Flask app
-#app = flask.Flask(__name__, static_url_path="/corpus")
+#app = flask.Flask(__name__, static_url_path="/corpus_kd")
 app = flask.Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
@@ -28,115 +27,22 @@ app.config['SECRET_KEY'] = 'falconpunch'
 
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
-    
-def tsne_plot(model, wordlist=[], highlight_word=""):
-    """Creates t-SNE plot"""
-    labels = []
-    tokens = []
-    if wordlist:
-        for word in wordlist:
-            tokens.append(model.wv.get_vector(word))
-            labels.append(word)
-    else:
-        for word in model.wv.index_to_key:
-            tokens.append(model.wv.get_vector(word))
-            labels.append(word)
-    # Add the word to be highlighted to the end of the token and label lists
-    if highlight_word:
-        tokens.append(model.wv.get_vector(highlight_word))
-        labels.append(highlight_word)
-    tokens = np.asarray(tokens)
-    # 'n_components' should be inferior to 4 for the barnes_hut algorithm as it relies on quad-tree or oct-tree
-    #tsne_model = TSNE(perplexity=100, n_components=2, init='pca', n_iter=2500, random_state=42)
-    tsne_model = TSNE(perplexity=50, n_components=2, init='pca', n_iter=2500)
-    new_values = tsne_model.fit_transform(tokens)
-    x = []
-    y = []
-    for value in new_values:    
-        x.append(value[0])
-        y.append(value[1])
-    plt.figure(figsize=(16, 16)) 
-    if highlight_word:
-        for i in range(len(x)-1):
-            plt.scatter(x[i],y[i])
-            plt.annotate(labels[i],
-                         xy=(x[i], y[i]),
-                         xytext=(5, 2),
-                         textcoords='offset points',
-                         ha='right',
-                         va='bottom')
-        plt.scatter(x[-1],y[-1], color="red")
-        plt.annotate(labels[-1],
-                         xy=(x[-1], y[-1]),
-                         xytext=(5, 2),
-                         textcoords='offset points',
-                         ha='right',
-                         va='bottom',
-                         color="red")
-    else:
-        for i in range(len(x)):
-            plt.scatter(x[i],y[i])
-            plt.annotate(labels[i],
-                         xy=(x[i], y[i]),
-                         xytext=(5, 2),
-                         textcoords='offset points',
-                         ha='right',
-                         va='bottom')
-    plt.savefig("static/tsne.png")
 
-def pca_plot(model, wordlist=[], highlight_word=""):
-    """Creates PCA model and plots it"""
-    labels = []
-    tokens = []
-    if wordlist:
-        for word in wordlist:
-            tokens.append(model.wv.get_vector(word))
-            labels.append(word)
-    else:
-        for word in model.wv.index_to_key:
-            tokens.append(model.wv.get_vector(word))
-            labels.append(word)
-    # Add the word to be highlighted to the end of the token and label lists
-    if highlight_word:
-        tokens.append(model.wv.get_vector(highlight_word))
-        labels.append(highlight_word)
-    tokens = np.asarray(tokens)
-    pca_model = PCA(n_components=4)
-    new_values = pca_model.fit_transform(tokens)
-    x = []
-    y = []
-    for value in new_values:    
-        x.append(value[0])
-        y.append(value[1])
-    plt.figure(figsize=(16, 16)) 
-    if highlight_word:
-        for i in range(len(x)-1):
-            plt.scatter(x[i],y[i])
-            plt.annotate(labels[i],
-                         xy=(x[i], y[i]),
-                         xytext=(5, 2),
-                         textcoords='offset points',
-                         ha='right',
-                         va='bottom')
-        plt.scatter(x[-1],y[-1], color="red")
-        plt.annotate(labels[-1],
-                         xy=(x[-1], y[-1]),
-                         xytext=(5, 2),
-                         textcoords='offset points',
-                         ha='right',
-                         va='bottom',
-                         color="red")
-    else:
-        for i in range(len(x)):
-            plt.scatter(x[i],y[i])
-            plt.annotate(labels[i],
-                         xy=(x[i], y[i]),
-                         xytext=(5, 2),
-                         textcoords='offset points',
-                         ha='right',
-                         va='bottom')
-    plt.savefig("static/pca.png")
+tokenizer = nltk.tokenize.RegexpTokenizer(r'[a-zA-Z0-9-]+[a-zA-Z-][a-zA-Z0-9-]+').tokenize
+stemmer = nltk.stem.porter.PorterStemmer()
+stopwords = nltk.corpus.stopwords.words('english')
 
+TOPCOUNT = 10
+
+# Load config file
+with open("config_tfidf.json", "r", encoding="UTF-8") as conf:
+    config = json.load(conf)
+# Load corpus file (technically we just want the metadata for the files in the corpus)
+with open(config["corpus"], "r", encoding="UTF-8") as f:
+    corpus = json.load(f)
+# Load TFIDF files
+tfidf_1 = pd.read_csv("tfidf_kd.csv", index_col=0)
+tfidf_2 = pd.read_csv("tfidf_bigram_kd.csv", index_col=0)
 
 @app.route('/', methods=['GET','POST'])
 def main():
@@ -164,25 +70,42 @@ def main():
                 ## replace search term with set of results
                 pass
         '''
-
         searchterm = flask.request.form.get('searchterm')
         modelname = flask.request.form.get('searchtype')
-        topwordcount = flask.request.form.get('topwordcount')
-        print(flask.request.form)
-        if modelname == "als_cbow":
-            model = gensim.utils.SaveLoad.load("word2vec_gensim_cbow_als.model")
-        elif modelname == "sle_cbow":
-            model = gensim.utils.SaveLoad.load("word2vec_gensim_cbow_sle.model")
-        try:
-            #results = model.wv.most_similar(searchterm)
-            # Get top 100 most similar words using cosine similarity
-            results = model.wv.most_similar(searchterm, topn=int(topwordcount))
-            results_words = [i[0] for i in results]
-            tsne_plot(model, results_words, searchterm)
-            pca_plot(model, results_words, searchterm)
-        except KeyError:
-            results = []
-        return flask.render_template('results.htm', searchterm=searchterm, results=results, topwordcount=topwordcount)
+        
+        if modelname == "tfidf":
+            tfidf = tfidf_1
+        if modelname == "tfidf2":
+            tfidf = tfidf_2
+        
+        # Tokenize and clean up the search terms
+        searchtokens = tokenizer(searchterm)
+        searchtokens_stemmed = [stemmer.stem(token) for token in searchtokens if token not in stopwords]
+        
+        if modelname == "tfidf2":
+            bigram_tokens = list()
+            for i in range(len(searchtokens_stemmed)):
+                bigram_tokens.append(" ".join(searchtokens_stemmed[i:i+2]))
+            searchtokens_stemmed = bigram_tokens
+        
+        # Sum the TFIDF values from table
+        query = pd.core.series.Series(np.zeros(len(tfidf)), index=tfidf.index)
+        for token in searchtokens_stemmed:
+            try:
+                query = query.add(tfidf[token])
+            except:
+                continue
+        query.index = tfidf.index
+        query.sort_values(inplace=True, ascending=False)
+        # Get top docs
+        top = OrderedDict(query.head(TOPCOUNT))
+        
+        # Get file name and TFIDF sums
+        if sum(query) > 0:
+            results = [(os.path.basename(file), corpus[file]["title"], corpus[file]["token_count"], top[file]) for file in top]
+        else:
+            results = list()
+        return flask.render_template('results.htm', searchterm=searchterm, results=results, topcount=TOPCOUNT)
 
 @app.route('/upload', methods=['GET','POST'])
 def upload_file():
